@@ -7,7 +7,7 @@ export default function header({ title, slogan }) {
                 <img className={style.avatar} src="./images/avatar.png" alt="avatar" />
                 <h1 className={style.headerTitle}>QQPR{title}</h1>
                 <hr className={style.divider} />
-                <p className={style.slogan}>suzume{slogan}</p>
+                <p className={style.slogan}>SUZUME{slogan}</p>
             </div>
         </header>
     );
