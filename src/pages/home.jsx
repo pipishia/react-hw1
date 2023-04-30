@@ -1,15 +1,29 @@
 import Header from "../components/header/header"
+import Image from "../components/images/images"
+import Description from "../components/text/text"
 import Footer from "../components/footer/footer"
-import Images from "../components/images/images"
-import Text from "../components/text/text"
+import { useImages } from "../react-query";
 function Home() {
+
+    const { data, isLoading } = useImages();
+  const images = data || [];
+
     return (
-        <div>
-            <Header />
-            <Images />
-            <Text />
-            <Footer />
+        <div className="container mainLayout">
+            <Header
+                className="layoutHeader"
+                titie="photoweb"
+                slogan="K's Web"
+            />
+            <Image
+                images={images}
+                isLoading={isLoading}
+                className="layoutImage"
+            />
+            <Description className="layoutDescription" />
+            <Footer className="layoutFooter" />
         </div>
     );
 }
-export default Home
+
+export default Home;

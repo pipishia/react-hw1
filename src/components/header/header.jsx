@@ -5,9 +5,9 @@ export default function header({ title, slogan }) {
         <header className={style.header}>
             <div className="container d-flex flex-column align-items-center">
                 <img className={style.avatar} src="./images/avatar.png" alt="avatar" />
-                <h1 className={style.headerTitle}>QQPR{title}</h1>
+                <h1 className={style.headerTitle}>QQPR</h1>
                 <hr className={style.divider} />
-                <p className={style.slogan}>SUZUME{slogan}</p>
+                <p className={style.slogan}>QQQQ</p>
             </div>
         </header>
     );
